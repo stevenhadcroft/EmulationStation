@@ -33,6 +33,8 @@ GuiMenu::GuiMenu(Window* window) : GuiComponent(window), mMenu(window, "MAIN MEN
 	// [version]
 
 	auto openScrapeNow = [this] { mWindow->pushGui(new GuiScraperStart(mWindow)); };
+	
+	/*
 	addEntry("SCRAPER", 0x777777FF, true, 
 		[this, openScrapeNow] { 
 			auto s = new GuiSettings(mWindow, "SCRAPER");
@@ -66,7 +68,8 @@ GuiMenu::GuiMenu(Window* window) : GuiComponent(window), mMenu(window, "MAIN MEN
 
 			mWindow->pushGui(s);
 	});
-
+	*/
+	
 	addEntry("SOUND SETTINGS", 0x777777FF, true, 
 		[this] {
 			auto s = new GuiSettings(mWindow, "SOUND SETTINGS");
