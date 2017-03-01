@@ -255,6 +255,7 @@ std::shared_ptr<SystemView> ViewController::getSystemListView()
 
 bool ViewController::input(InputConfig* config, Input input)
 {
+	/*
 	if(mLockInput)
 		return true;
 
@@ -268,7 +269,7 @@ bool ViewController::input(InputConfig* config, Input input)
 
 	if(mCurrentView)
 		return mCurrentView->input(config, input);
-
+	*/
 	return false;
 }
 
