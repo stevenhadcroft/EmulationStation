@@ -255,21 +255,22 @@ std::shared_ptr<SystemView> ViewController::getSystemListView()
 
 bool ViewController::input(InputConfig* config, Input input)
 {
-	/*
 	if(mLockInput)
 		return true;
 
 	// open menu
+	/*
 	if(config->isMappedTo("start", input) && input.value != 0)
 	{
 		// open menu
 		mWindow->pushGui(new GuiMenu(mWindow));
 		return true;
 	}
-
+	*/
+	
 	if(mCurrentView)
 		return mCurrentView->input(config, input);
-	*/
+	
 	return false;
 }
 
