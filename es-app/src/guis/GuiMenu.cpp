@@ -275,6 +275,6 @@ std::vector<HelpPrompt> GuiMenu::getHelpPrompts()
 	std::vector<HelpPrompt> prompts;
 	prompts.push_back(HelpPrompt("up/down", "choose"));
 	prompts.push_back(HelpPrompt("a", "select"));
-	prompts.push_back(HelpPrompt("start", "close"));
+	//prompts.push_back(HelpPrompt("start", "close"));
 	return prompts;
 }
